@@ -71,11 +71,13 @@ def calculate_margin_and_premium(data: pd.DataFrame, lot_size=75) -> pd.DataFram
     ...
     return data
 ```
-<br />## Example Usage
+<br />
+## Example Usage
 ```
 df_option_chain = get_option_chain_data(response_json)
 df_final = calculate_margin_and_premium(df_option_chain)
 print(df_final)
 ```
-<br />## Sample Output<br />
-A sample output is provided in the comments, illustrating the structure of the option chain and margin data.<br />
+<br />
+## Sample Output
+<br />A sample output is provided in the comments, illustrating the structure of the option chain and margin data.<br />
