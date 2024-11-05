@@ -86,3 +86,6 @@ print(df_final)
 * API Limitations: Upstox API rate limits and endpoint availability may vary. Ensure you have permissions and sufficient quota for all API calls.<br />
 * Data Accuracy: Verify that bid/ask prices and other values meet your use case's accuracy requirements.<br />
 * Security: Do not share your client_id, client_secret, or access token publicly.<br />
+## License
+<br />
+This project is provided under the MIT License. See LICENSE for more information.
