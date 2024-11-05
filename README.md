@@ -33,7 +33,7 @@ access_token = response.json().get('access_token')
 print("Access Token:", access_token)
 ```
 <br />This code returns an access token after successful authentication.<br /><br />
-* Step 2: Retrieve Option Chain Data
+* Step 2: Retrieve Option Chain Data<br />
 Using the access token, we retrieve the option chain data for a specified instrument and expiry date. Replace access_token and any parameters as necessary.<br />
 ```
 import requests
@@ -51,3 +51,40 @@ headers = {
 response = requests.get(url, params=params, headers=headers)
 print(response.json())
 ```
+<br />
+The response includes details like strike prices, option prices, and market data.<br /><br />
+* Step 3: Extract Data and Calculate Margin and Premium<br />
+Function 1: Extract Option Chain Data<br />
+The get_option_chain_data function parses the option chain response and organizes it into a pandas DataFrame for easy analysis.<br />
+```
+import pandas as pd
+
+def get_option_chain_data(response_json):
+    # Code for extracting data
+    ...
+    return df
+```
+<br />
+Function 2: Calculate Margin and Premium<br />
+The calculate_margin_and_premium function uses the option data to estimate the margin requirement and premium earned based on bid/ask prices and lot sizes.<br />
+```
+def calculate_margin_and_premium(data: pd.DataFrame, lot_size=75) -> pd.DataFrame:
+    # Code for margin and premium calculation
+    ...
+    return data
+```
+<br />
+# Example Usage
+```
+df_option_chain = get_option_chain_data(response_json)
+df_final = calculate_margin_and_premium(df_option_chain)
+print(df_final)
+```
+<br />
+# Sample Output<br />
+A sample output is provided in the comments, illustrating the structure of the option chain and margin data.<br />
+
+# Notes<br />
+* API Limitations: Upstox API rate limits and endpoint availability may vary. Ensure you have permissions and sufficient quota for all API calls.<br />
+* Data Accuracy: Verify that bid/ask prices and other values meet your use case's accuracy requirements.<br />
+* Security: Do not share your client_id, client_secret, or access token publicly.<br />
