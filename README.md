@@ -3,8 +3,8 @@
 This project provides a Python-based solution for obtaining option chain data and calculating margin requirements and premiums using the Upstox API. <br />This script demonstrates how to authenticate with Upstox, retrieve option chain data, and perform calculations on the data. The project is divided into three main steps, explained below.<br />
 
 # Prerequisites
- Upstox Account and API Credentials: Create an account on Upstox (or any supported trading platform) and set up an API application to obtain the client_id, client_secret, and access token.<br />
- Python Packages:<br /><br />
+ Upstox Account and API Credentials: Create an account on Upstox (or any supported trading platform) and set up an API application to obtain the client_id, client_secret, and access token.<br /><br />
+ Python Packages:<br />
 * requests: For making API requests.<br />
 * pandas: For data manipulation.<br />
 * Install dependencies using pip install requests pandas.<br />
