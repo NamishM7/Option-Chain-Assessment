@@ -88,4 +88,4 @@ print(df_final)
 * Security: Do not share your client_id, client_secret, or access token publicly.<br />
 ## License
 <br />
-This project is provided under the Apache-2.0 License. See LICENSE for more information.
+This project is provided under the Apache-2.0 License. See [LICENSE] for more information.
