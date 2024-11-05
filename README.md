@@ -33,3 +33,5 @@ access_token = response.json().get('access_token')
 print("Access Token:", access_token)
 ```
 <br />This code returns an access token after successful authentication.<br /><br />
+* Step 2: Retrieve Option Chain Data<br />
+Using the access token, we retrieve the option chain data for a specified instrument and expiry date. Replace access_token and any parameters as necessary.<br />
