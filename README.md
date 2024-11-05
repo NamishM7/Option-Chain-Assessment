@@ -51,4 +51,7 @@ headers = {
 response = requests.get(url, params=params, headers=headers)
 print(response.json())
 ```
-
+<br />The response includes details like strike prices, option prices, and market data.<br /><br />
+* Step 3: Extract Data and Calculate Margin and Premium<br />
+Function 1: Extract Option Chain Data<br />
+The get_option_chain_data function parses the option chain response and organizes it into a pandas DataFrame for easy analysis.<br />
