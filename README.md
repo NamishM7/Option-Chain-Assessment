@@ -4,7 +4,7 @@ This project provides a Python-based solution for obtaining option chain data an
 
 # Prerequisites
  Upstox Account and API Credentials: Create an account on Upstox (or any supported trading platform) and set up an API application to obtain the client_id, client_secret, and access token.<br />
- Python Packages:<br />
+ Python Packages:<br /><br />
 * requests: For making API requests.<br />
 * pandas: For data manipulation.<br />
 * Install dependencies using pip install requests pandas.<br />
