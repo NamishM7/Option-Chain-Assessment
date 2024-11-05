@@ -12,7 +12,7 @@ This project provides a Python-based solution for obtaining option chain data an
 # Steps<br />
 * Step 1: Obtain Access Token<br />
 To access the Upstox API, you need to authenticate and retrieve an access token. Replace the placeholders in the code with your own client_id, client_secret, code, and redirect_uri.
-`
+```
 import requests
 
 url = 'https://api.upstox.com/v2/login/authorization/token'
@@ -31,5 +31,4 @@ data = {
 response = requests.post(url, headers=headers, data=data)
 access_token = response.json().get('access_token')
 print("Access Token:", access_token)
-
-`
+```
