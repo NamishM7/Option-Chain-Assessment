@@ -55,3 +55,14 @@ print(response.json())
 * Step 3: Extract Data and Calculate Margin and Premium<br />
 Function 1: Extract Option Chain Data<br />
 The get_option_chain_data function parses the option chain response and organizes it into a pandas DataFrame for easy analysis.<br />
+```
+import pandas as pd
+
+def get_option_chain_data(response_json):
+    # Code for extracting data
+    ...
+    return df
+```
+<br />
+Function 2: Calculate Margin and Premium<br />
+The calculate_margin_and_premium function uses the option data to estimate the margin requirement and premium earned based on bid/ask prices and lot sizes.<br />
