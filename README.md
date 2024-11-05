@@ -32,3 +32,22 @@ response = requests.post(url, headers=headers, data=data)
 access_token = response.json().get('access_token')
 print("Access Token:", access_token)
 ```
+<br />This code returns an access token after successful authentication.<br /><br />
+* Step 2: Retrieve Option Chain Data
+Using the access token, we retrieve the option chain data for a specified instrument and expiry date. Replace access_token and any parameters as necessary.<br />
+```
+import requests
+
+url = 'https://api.upstox.com/v2/option/chain'
+params = {
+    'instrument_key': 'NSE_INDEX|Nifty 50',
+    'expiry_date': '2024-03-28'
+}
+headers = {
+    'Accept': 'application/json',
+    'Authorization': f'Bearer {access_token}'
+}
+
+response = requests.get(url, params=params, headers=headers)
+print(response.json())
+```
